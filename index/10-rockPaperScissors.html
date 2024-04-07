@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <title>Lesson 10 - Rock Paper Scissors: HTML, CSS & JS Together</title>
+
+    <link rel="stylesheet" href="/styles/10-rockPaperScissors.css">
+
+  </head>
+
+  <body>
+
+    <p class="title">The Rock Paper Scissors Game</p>
+
+    <!--ROCK BUTTON-->
+
+    <button onclick=" 
+
+      // myChoiceIcon = '<img class=\'moveIcon\' src=\'/images/rock-emoji.png\'>'
+
+      winner('rock');
+
+    "class="moveButton">
+      <img class="moveIcon" src="/images/rock-emoji.png">
+    </button>
+
+
+    <!--PAPER BUTTON-->
+
+    <button onclick="
+
+      // myChoiceIcon = '<img class=\'moveIcon\' src=\'/images/paper-emoji.png\'>'
+
+      winner('paper');
+
+    "class="moveButton">
+      <img class="moveIcon" src="/images/paper-emoji.png">
+    </button>
+
+
+    <!--SCISSORS BUTTON-->
+    
+    <button onclick="
+
+      // myChoiceIcon = '<img class=\'moveIcon\' src=\'/images/scissors-emoji.png\'>'
+
+      winner('scissors');
+
+    "class="moveButton">
+      <img class="moveIcon" src="/images/scissors-emoji.png">
+    </button>
+          
+    <!-- <button onclick="
+    
+      alert(showScore());
+
+    ">
+    Show Score
+    </button> -->
+
+    <p class="gameStatusEl gameStatus"></p>
+
+    <p class="choicesEl"></p>
+
+    <p class="statsEl"></p>
+
+    <button onclick="
+
+      score.wins = 0;
+      score.losses = 0;
+      score.ties = 0;
+
+      localStorage.removeItem('score');
+
+      showScore();
+
+    "class="resetButton">
+    Reset Score
+    </button>
+
+    <script src="/scripts/10-rockPaperScissors.js"></script>
+
+  </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
